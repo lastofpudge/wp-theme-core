@@ -1,0 +1,10 @@
+{
+  "name": "wp-theme/core",
+  "description": "Core of wp-theme",
+  "license": "GPL-3.0-or-later",
+  "autoload": {
+    "psr-4": {
+      "Core\\": "Core/"
+    }
+  }
+}
