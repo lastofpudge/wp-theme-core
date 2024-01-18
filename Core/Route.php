@@ -24,7 +24,6 @@ class Route
         $data = $controllerInstance->$method();
 
         static::renderView($view, $data);
-        return;
     }
 
     /**
