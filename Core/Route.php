@@ -24,6 +24,7 @@ class Route
         $data = $controllerInstance->$method();
 
         static::renderView($view, $data);
+        return;
     }
 
     /**
@@ -35,6 +36,7 @@ class Route
     private static function renderView(string $view, array $data): void
     {
         Timber::render('views/' . $view . '.twig', $data);
+        exit;
     }
 
     /**
