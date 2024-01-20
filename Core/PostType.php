@@ -14,11 +14,12 @@ class PostType
      * @param string $name
      * @param string $singular
      * @param bool $public
+     * @param bool $showUi
      * @param bool $hasArchive
      * @param string $menuIcon
      * @param array $supports
      */
-    public static function register(string $url, string $name, string $singular, bool $public, bool $hasArchive, string $menuIcon, array $supports): void
+    public static function register(string $url, string $name, string $singular, bool $public, bool $showUi, bool $hasArchive, string $menuIcon, array $supports): void
     {
         register_post_type($url, [
             'labels' => [
@@ -26,6 +27,7 @@ class PostType
                 'singular_name' => __($singular),
             ],
             'public' => $public,
+            'show_ui' => $showUi,
             'has_archive' => $hasArchive,
             'menu_icon' => $menuIcon,
             'supports' => $supports,
