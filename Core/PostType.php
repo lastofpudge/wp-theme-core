@@ -2,9 +2,6 @@
 
 namespace Core;
 
-/**
- * Custom post types register.
- */
 class PostType
 {
     /**
